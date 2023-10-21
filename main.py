@@ -1,8 +1,6 @@
-def CheckLeapYear(year):
- import calendar
- return(calendar.isleap(year))
-year=int(input("Enter the year:"))  
-if(CheckLeapYear(year)):
- print("Leap Year")
-else:
- print("Not a Leap Year")
+def factorial(n):
+  if n==0:
+    return 1
+  return n*factorial(n-1)
+num=6
+print("factorial of",num,"is",factorial(num))
