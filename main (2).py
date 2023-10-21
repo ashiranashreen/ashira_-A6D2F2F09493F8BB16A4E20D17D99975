@@ -1,13 +1,8 @@
-class Player:
-  def play(self):
-    print("The player is playing cricket.")
-class Batsman(Player):
-   def play(self):
-    print("The batsman is batting.")
-class Bowler(Player):
-   def play(self):
-    print("The bowler is bowling.")
-batsman=Batsman()
-bowler=Bowler()
-batsman.play()
-bowler.play()
+def CheckLeapYear(year):
+ import calendar
+ return(calendar.isleap(year))
+year=int(input("Enter the year:"))  
+if(CheckLeapYear(year)):
+ print("Leap Year")
+else:
+ print("Not a Leap Year")
